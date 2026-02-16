@@ -3,39 +3,91 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Connor Pace's Portfolio</title>
+    <title>My Portfolio</title>
+    <style>
+        /* YOUR CSS GOES HERE */
+        body
+        {
+            color: #333;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        #main-header
+        {
+            background-color: #757ed4;
+            text-align: center;
+            padding: 20px;
+        }
+
+        h1
+        {
+            font-size: x-large;
+        }
+
+        h2
+        {
+            color: #432cc7;
+        }
+
+        nav ul
+        {
+            display: flex;
+            list-style: none;
+
+            /*extra*/ 
+            gap: 20px;
+            padding: 10px;
+            
+        }
+
+        .card
+        {
+            padding: 15px;
+            border: 1px solid #3d10a7;
+            border-radius: 8px;
+            margin: 10px 0;
+        }
+
+        a
+        {
+            color: rgb(132, 201, 228);
+        }
+
+        footer
+        {
+            background-color: #8a99da;
+        }
+
+    </style>
 </head>
 <body>
-        
-    <header>
-        <h1>Welcome to Connor Pace's Portfolio</h1>
+    <header id="main-header">
+        <h1>Connor Pace</h1>
+        <p>Student ID: 2799528</p>
     </header>
 
     <nav>
         <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">Projects</a></li>
-            <li><a href="#">Contact</a></li> 
+            <li><a href="#about">About</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
         </ul>
-
-    </nav> 
+    </nav>
 
     <main>
-        <section>
+        <section class="card" id="about">
             <h2>About Me</h2>
-            <p>Hi, I'm Connor Pace, a passionate software developer with experience in web development, whoop whoop.I am a student at wits</p> 
-            <p>I am learning Github and html whoop whoop. Hope I do well</p> 
+            <p>Write a short paragraph about yourself here. Include your interests, your field of study, and what you hope to achieve in this course.</p>
         </section>
 
-        <article>
-            <h3>Latest Project</h3>
-            <p>created a prodject that keeps track of good ideas you had while dreaming</p>
+        <article class="card" id="projects">
+            <h2>Latest Project</h2>
+            <p>Describe a project you have worked on or are currently working on. This could be a personal project, a group assignment, or something you built for fun.</p>
         </article>
     </main>
 
     <footer>
-        © 2026 2799528 | Built with Semantic HTML
+        <p>&copy; 2025 Connor Pace. All rights reserved.</p>
     </footer>
-
 </body>
 </html>
