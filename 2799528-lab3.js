@@ -24,7 +24,7 @@ function getMusicTitlesByYear(tracks)
 
         const { year, title } = track;
 
-        //skips if year is not a number
+        //skips if year is not a finite number
         if (!Number.isFinite(year)) 
         {
             continue;
@@ -117,7 +117,7 @@ function filterAndTransformTracks(tracks,criteria)
             continue;
         }
 
-        //calculates decade, just floors to nearest 10th
+        //calculates decade
         const decadeStart = Math.floor(year / 10) * 10;
 
         //adding to output array
@@ -126,6 +126,37 @@ function filterAndTransformTracks(tracks,criteria)
 
     return transformedTracks;
 }
+
+
+
+
+
+
+
+
+
+//testing
+// if (require.main === module)//makes sure only runs if not imported as a module
+// {
+//     // const tracks = [
+//     //     { title: 'Blinding Lights', artist: 'The Weeknd', year: 2020 },
+//     //     { title: 'Levitating', artist: 'Dua Lipa', year: 2021 },
+//     //     { title: 'Save Your Tears', artist: 'The Weeknd', year: 2020 },
+//     // ];
+
+//     const criteria = { artist: 'The weeknd' };
+//     const tracks = [
+//     { title: 'Blinding Lights', artist: 'The Weeknd', year: 2020 },
+//     { title: 'Starboy', artist: 'The Weeknd', year: 2016 },
+//     { title: 'Levitating', artist: 'Dua Lipa', year: 2021 },
+//     { title: 'Thriller', artist: 'Michael Jackson', year: 1982 },
+// ];
+
+//     //console.log(getMusicTitlesByYear(tracks));
+//     console.log(filterAndTransformTracks(tracks,criteria));
+// }
+
+
 //export 
 module.exports = {
     getMusicTitlesByYear,
