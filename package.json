@@ -1,0 +1,24 @@
+{
+  "name": "2799528-portfolio",
+  "version": "1.0.0",
+  "description": "",
+  "main": "2799528-lab3.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/PaceWalker14/2799528-portfolio.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/PaceWalker14/2799528-portfolio/issues"
+  },
+  "homepage": "https://github.com/PaceWalker14/2799528-portfolio#readme",
+  "dependencies": {
+    "express": "^5.2.1"
+  }
+}

@@ -131,13 +131,19 @@ function filterAndTransformTracks(tracks,criteria)
 
 
 
+//export 
+module.exports = {
+    getMusicTitlesByYear,
+    filterAndTransformTracks
+};
+
+
 
 
 
 
 //testing
-// if (require.main === module)//makes sure only runs if not imported as a module
-// {
+
 //     // const tracks = [
 //     //     { title: 'Blinding Lights', artist: 'The Weeknd', year: 2020 },
 //     //     { title: 'Levitating', artist: 'Dua Lipa', year: 2021 },
@@ -154,11 +160,3 @@ function filterAndTransformTracks(tracks,criteria)
 
 //     //console.log(getMusicTitlesByYear(tracks));
 //     console.log(filterAndTransformTracks(tracks,criteria));
-// }
-
-
-//export 
-module.exports = {
-    getMusicTitlesByYear,
-    filterAndTransformTracks
-};
